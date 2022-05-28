@@ -1,0 +1,36 @@
+<div class="container mt-5 mb-5">
+    <div class="row row-cols-auto justify-content-center g-5">
+        {{produtoAdicionar}}
+    </div>
+    <form method="POST" action="index.php?pg=administrador&act=insert">
+        <table class='table' >
+                        <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Valor</th>
+                            <th>Desricao</th>
+                            <th>Imagem(url)</th>
+                        </tr>
+                            <tr>
+                                <th>
+                                    <input type="text" name="nome">
+                                </th>
+                                <th>
+                                    <input type="text" name="valor">
+                                </th>
+                                <th>
+                                    <input type="text" name="descricao">
+                                </th>
+                                <th>
+                                    <input type="text" name="pdimagem">
+                                </th>
+                            </tr>
+                        </thead>
+            </table>
+        <center>
+                    <button type="submit">Enviar dados</button>
+        </center>
+    </form>
+</div>
+
+
